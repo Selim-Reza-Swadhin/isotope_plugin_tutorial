@@ -1,0 +1,105 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+}
+
+/* ---- button ---- */
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1.0em;
+  background: #000;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.button:hover {
+  background-color: #87d37a;
+  color: #fff;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: #87d37a;
+}
+
+.button.is-checked {
+  color: white;
+}
+
+/* ---- button-group ---- */
+.button-group .button{
+  border-radius: 0px;
+  margin-left: 0;
+  margin-right: 12px;
+}
+.button-group {
+  margin-bottom: 20px;
+}
+
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .element-item ---- */
+
+.element-item {
+  position: relative;
+  float: left;
+  width: 33%;
+  border: 12px solid #fff;
+  overflow: hidden;
+}
+
+.element-item img{
+  width: 100%;
+}
+
+/*overlay add*/
+.isotope-overlay{
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  /*bottom: -100%;*/
+  transition: 0.5s;
+}
+.element-item:hover .isotope-overlay{
+  top: 0;
+  /*bottom: -50%;*/
+}
+.element-item h2{
+  color:#87d37a;
+  margin-top: 160px;
+}
+
+#portfolio{
+  padding: 100px 0px;
+}
+
+#portfolio p{
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+#portfolio h2{
+  text-transform: uppercase;
+  font-weight: bold;
+}
